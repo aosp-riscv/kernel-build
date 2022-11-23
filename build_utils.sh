@@ -651,6 +651,8 @@ function build_gki_artifacts() {
 
   if [ "${ARCH}" = "arm64" ]; then
     build_gki_boot_images "${DIST_DIR}/Image"
+  elif [ "${ARCH}" = "riscv" ]; then
+    build_gki_boot_images "${DIST_DIR}/Image"
   elif [ "${ARCH}" = "x86_64" ]; then
     build_gki_boot_images "${DIST_DIR}/bzImage"
   else
